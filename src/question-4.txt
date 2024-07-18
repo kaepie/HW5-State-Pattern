@@ -1,0 +1,10 @@
+//6510450291 Chutipong Triyasith
+
+เมื่อเราเพิ่ม state แต่ไม่เพิ่ม transition
+ - ไม่ใช้ design pattern ต้องเพิ่ม Attribute และเพิ่ม condition ไปใน method ทำให้ซับซ้อนและยุ่งยากมาก
+ - ใช้ design pattern เพิ่ม class ใหม่มาที่สามารถ implements method มา และแบ่งการทำงานทำให้สามารถแก้ไขได้ง่าย
+
+เมื่อเราเพิ่ม state และ transition
+ - ไม่ใช้ design pattern การเพิ่ม method สามารถทำได้ง่ายเนื่องจากมี method เดียวแต่
+ ต้องเขียน condition ของทุก state ลงไปใน method จึงทำได้ยากเมื่อมี state เยอะๆ
+ - ใช้ design pattern มีการใช้ interface ทำให้ถ้าเพิ่ม transition และเพิ่ม state สามารถทำได้ง่ายเพราะว่ามีการแบ่งการทำงานที่ชัดเจน
